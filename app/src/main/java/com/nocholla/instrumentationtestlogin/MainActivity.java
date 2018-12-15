@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 if(username.matches("edureka") && password.matches("edureka123\"")) {
                     // Toast On Success
                     Toast.makeText(MainActivity.this, getString(R.string.toast_success), Toast.LENGTH_SHORT).show();
-                    
+
                     // Background Color on Success
                     constraintLayout.setBackgroundColor(Color.GREEN);
                 } else {
