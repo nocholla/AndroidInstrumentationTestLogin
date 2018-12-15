@@ -1,5 +1,7 @@
 package com.nocholla.instrumentationtestlogin;
 
+import android.graphics.Color;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     EditText inputPassword;
     @BindView(R.id.btn_login)
     Button btnLogin;
+    @BindView(R.id.view_background_color)
+    ConstraintLayout constraintLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +52,12 @@ public class MainActivity extends AppCompatActivity {
                 if(username.matches("edureka") && password.matches("edureka123\"")) {
                     // Toast On Success
                     Toast.makeText(MainActivity.this, getString(R.string.toast_success), Toast.LENGTH_SHORT).show();
-
-                    // Disable Button On Success
-                    //btnLogin.setEnabled(false);
+                    
+                    // Background Color on Success
+                    constraintLayout.setBackgroundColor(Color.GREEN);
+                } else {
+                    // Background Color on Fail
+                    constraintLayout.setBackgroundColor(Color.RED);
                 }
 
                 // Wrong Username
