@@ -1,4 +1,4 @@
-# Android Instrumentation Test Login
+# Android Instrumentation Test Log In
 
 ![instrumentation test 1](https://user-images.githubusercontent.com/801612/50358438-292ce580-050e-11e9-915b-49b536363b1d.jpeg)
 
